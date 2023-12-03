@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.area1 {
+  width: 100%;
+  display: flex;
+  max-width: 500px;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.area2 {
+  gap: 16px;
+  width: 100%;
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+}
+
+.summarization,
+.transcription {
+  padding: 24px;
+  font-size: 18px;
+  border-radius: 4px;
+  background: #eeeeee;
+}
