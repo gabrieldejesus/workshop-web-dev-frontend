@@ -12,14 +12,14 @@ export default function Form() {
 
   const onSubmit = async (values: any) => {
     try {
-      const response = await fetch("http://localhost:3333/api/summarizations", {
+      const response = await fetch("http://localhost:3030/summarizations", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           title: "Teste",
           startAt: 60,
           endAt: 120,
-          link: values.link,
+          link: values?.link,
         }),
       });
 
@@ -28,7 +28,6 @@ export default function Form() {
       }
 
       const data = await response.json();
-      console.log(data);
     } catch (error) {
       console.log(error);
     }
